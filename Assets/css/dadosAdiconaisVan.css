@@ -36,9 +36,7 @@ header span {
   font-size: 2rem;
   font-weight: 500;
 }
-button {
-  flex-grow: 0.1;
-}
+
 
 /*main-container*/
 
@@ -56,8 +54,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
   width: 100%;
-  height: 90%;
+  height: 70%;
 }
 
 .input_picture_container {
@@ -115,7 +114,7 @@ i.fa-camera {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex-grow:0.5;
+  flex-grow:0.1;
 }
 
 
@@ -140,6 +139,39 @@ input {
   flex-direction: column;
 }
 
+.bottom_part{
+  display: flex;
+  flex-direction: column;
+}
+
+.sla{
+  display: flex;
+  flex-direction: column;
+}
+.button_save {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: var(--main-yellow);
+  border: 1px solid black;
+  font-size: 1.5rem;
+  padding: 0.5rem 3.5rem;
+  border-radius: 10px;
+  box-shadow: 10px 8px 0 1px black;
+  transition: 0.2s;
+}
+
+.button_save:active {
+  box-shadow: none;
+  transform: translateX(10px);
+  transform: translateY(5px);
+}
+
+.button_container{
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width:768px) {
 
 main{
@@ -162,6 +194,7 @@ header{
   }
 
 }
+
 
 @media (max-width:1024px) {
   body{
